@@ -1,0 +1,710 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.bodypages{
+    background-color: black;
+}
+
+/* para celular */
+@media /* Mobile Styles */ only screen and (max-width: 576px) {
+
+    .contenido{
+        padding-top: 254px;
+        padding-bottom: 41px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: url(../media/foto\ del\ header.jpeg);
+        background-position: top center;
+        background-repeat: no-repeat;
+    }
+    .btn__bar{
+        width: 52px;
+        color: white;
+        margin-right: 29px;
+        cursor: pointer;
+        margin-left: 76px;
+        padding-top: 13px;
+    }
+    header{
+        background-color: #030303;
+        height:5rem;  
+        display: flex;
+        justify-content: space-around; 
+        align-items: center;
+        position: fixed;
+        width: 100%;
+    }
+    .nav__menú{
+        width: 100%;
+        height: 0vh;
+        position: fixed;
+        text-align: center;
+        font-family: 'Acme', sans-serif;
+        list-style-type: none;
+        color: #E25656;
+        background: rgba(0, 0, 0, .95);
+        top: 100px;
+        transition: all .5s;
+        }
+    .nav__li{
+        font-family: 'Acme', sans-serif;
+        font-weight: 600;
+        color: #E25656;
+        display: none;
+        text-decoration: none;
+        list-style-type: none;
+        width: 117px;
+        font-size: 20px;
+        line-height: 22px;
+        margin: 50px 0;
+        transition: all .5s;
+        margin-left: 91px;
+    }
+#check{ display: none;}
+#check:checked ~ .nav__menú{
+    height: 100vh;
+}
+#check:checked ~ .nav__menú li{
+    display: block;
+}
+
+
+.nav__menú li a.nav__li:hover{
+    color: white;
+
+}
+    .redes__iconos{
+        display: grid;
+        width: 61%;
+        grid-template-columns: 30% 30% 30%;
+    }
+    .iconos img{
+        width: 2rem;
+        background-color: #81a8e9;
+    
+    }
+    .iconos{
+        background-color: #81a8e9;
+        display: grid;
+        grid-template-columns: 27% 73%;
+        width: 417%;
+        height: 5rem;
+        align-items: center;
+        justify-items: center;
+    }
+    
+    h4.footer__contacto {
+        width: 100%;
+        font-weight: bolder;
+        font-family: "acme", sans-serif;
+        color: #E25656;
+        background-color: #81a8e9;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+    }
+    
+    .footer{
+        font-weight: bolder;
+        font-family: "acme", sans-serif;
+        color: #E25656;
+        background-color: #81a8e9;
+        display: grid;
+        grid-template-columns: 27% 73%;
+        width: 100%;
+        height: 4rem;
+    }
+    
+    .contacto{
+        font-style: italic;
+        text-align: center;
+    }
+    .titulos{
+        color: #E25656;
+        padding-top: 4cm;
+        padding-bottom: 1cm;
+        font-family: 'Acme', sans-serif;
+        text-align: center;
+    }
+    .formulario{
+        color: white;
+        text-align: center;
+        font-family: 'Shippori Antique', sans-serif;
+        padding-top: 2cm;
+        padding-bottom: 1cm;
+    }
+    .dato{
+        color: white;
+    }
+    .texto{
+        color: white;
+    }
+    
+    .titulo__sub{
+        color: #E25656;
+        padding-top: 1cm;
+        font-family: 'Acme', sans-serif;
+        text-align: center;
+    }
+    
+    .botonContacto{
+        display: inline-block;
+        border: 1cm;
+        font-family: 'Acme', sans-serif;
+        text-align: justify;
+        border-radius: 10%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        padding-left: 1%;
+        padding-right: 1%;
+        bottom: 2cm ; 
+        background-color: #c29f52;
+    }
+    
+    .boton{
+        text-decoration: none;
+        list-style-type: none;
+        color:#E25656;
+        font-weight: 800;
+        font-size: 20px;
+    }
+    
+    p{
+        text-align: center;
+        color: white;
+        font-family: 'Shippori Antique', sans-serif;
+    }
+    .fondo__opaco{
+        
+        width: 100%;
+        
+    }
+    .conteiner{
+        position: absolute;
+        width: 100%;
+        opacity: 20%;
+    }
+    .actores{
+        padding-bottom: 1cm;
+    }
+    .logo{
+        width: 320px;
+        padding-bottom: 31px;
+    }
+    .nav__logo{
+        width: 150px;
+        margin-right: -39px;
+    }
+    /* animacion al nav */
+    ul.nav__li:hover{
+        transform: rotate(-10deg);
+    }
+    #quienessomos{
+        display: grid;
+        grid-template-areas: 
+        "titulo titulo" 
+        "texto1 texto1" 
+        "titulo__sub1 titulo__sub1" 
+        "imgseba imgtami" 
+        "titulo__sub2 titulo__sub3" 
+        "texto2 texto3";
+        justify-items: center;
+        }
+    #actores{
+        display: grid;
+            grid-template-areas: 
+            "titulo__sub4 titulo__sub4" 
+            "imgloly imgloly" 
+            "titulo__sub5 titulo__sub5"
+            "textololy textololy";
+            justify-items: center;
+        }
+    
+    #titulo{
+        grid-area: titulo;
+    }    
+    #texto1{
+        grid-area: texto1;
+        width: 86%;
+    }    
+    #texto2{
+        grid-area: texto2;
+    } 
+    #texto3{
+        grid-area: texto3;
+    }       
+    
+    #imgtami{
+        grid-area: imgtami;
+        display: flex;
+        justify-content: center;
+    }
+    #imgloly{
+        grid-area: imgloly;
+    }
+    #titulo__sub1{
+        grid-area: titulo__sub1;
+    }
+    #titulo__sub2{
+        grid-area: titulo__sub2;
+    }
+    #titulo__sub3{
+        grid-area: titulo__sub3;
+    }
+    #titulo__sub4{
+        grid-area: titulo__sub4;
+    }
+    #titulo__sub5{
+        grid-area: titulo__sub5;
+    }
+    #textololy{
+        grid-area: textololy;
+        padding-bottom: 2cm;
+    }
+    
+    .contenido4{
+        display: grid;
+        grid-template-areas:
+            "titulo4 titulo4 titulo4"
+            "video1 video2 video3"
+            "link link link"
+            "footer4 footer4 footer4";
+            grid-template-rows: 7cm 6cm 3cm 30%;
+            grid-row-gap: 23px;
+            justify-items: center;
+            /* background-color: background: hsla(218, 70%, 71%, 1);
+            background: linear-gradient(90deg, hsla(218, 70%, 71%, 1) 0%, hsla(191, 28%, 23%, 1) 50%, hsla(207, 41%, 27%, 1) 100%);
+            background: -moz-linear-gradient(90deg, hsla(218, 70%, 71%, 1) 0%, hsla(191, 28%, 23%, 1) 50%, hsla(207, 41%, 27%, 1) 100%);
+            background: -webkit-linear-gradient(90deg, hsla(218, 70%, 71%, 1) 0%, hsla(191, 28%, 23%, 1) 50%, hsla(207, 41%, 27%, 1) 100%);
+            filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#81A8E9", endColorstr="#2A454B", GradientType=1 ); */
+    }
+    #titulo4{
+        grid-area: titulo4;
+    }
+    #video1{
+        grid-area: video1;
+    }
+    #video2{
+        grid-area: video2;
+    }
+    #video3{
+        grid-area: video3;
+    }
+    #linkyt{
+        grid-area: link;
+    }
+    #footer4{
+        grid-area: footer4;
+    }
+    
+    .videos{
+        width: 409px;
+        height: 242px;
+    }
+    /* .contenido2{
+        display: grid;
+        grid-template-areas: 
+        "contacto formulario";
+        background-color: background: hsla(218, 70%, 71%, 1);
+        background: linear-gradient(90deg, hsla(218, 70%, 71%, 1) 0%, hsla(191, 28%, 23%, 1) 50%, hsla(207, 41%, 27%, 1) 100%);
+        background: -moz-linear-gradient(90deg, hsla(218, 70%, 71%, 1) 0%, hsla(191, 28%, 23%, 1) 50%, hsla(207, 41%, 27%, 1) 100%);
+        background: -webkit-linear-gradient(90deg, hsla(218, 70%, 71%, 1) 0%, hsla(191, 28%, 23%, 1) 50%, hsla(207, 41%, 27%, 1) 100%);
+        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#81A8E9", endColorstr="#2A454B", GradientType=1 ); } */
+    
+    #titulo2{
+        font-size: 40px;
+    }
+    section.contacto{
+        grid-area: contacto;
+        padding-bottom: 4cm;
+    } 
+    
+    section.formulario{
+        grid-area: formulario;
+        padding-top: 5cm;
+        display: grid;
+        justify-items: center;
+    }
+    label{    
+        color: #E25656;
+        padding-bottom: 1cm;
+        font-family: 'Acme', sans-serif;
+        text-align: center;
+    }
+    .input{
+        width: 6cm;
+        height: 1cm;
+    }
+    .enviar{
+        width: 3cm;
+        font-family: 'Acme', sans-serif;
+        background-color: #c29f52;
+        color: #E25656;
+        height: 1cm;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    
+    #mensaje{
+        height: 2cm;
+    }
+    #contenido5{
+        background-image: url(../media/foto\ del\ header\ mas\ oscura.jpg);
+        background-position: center;
+    }
+
+}
+
+/* PARA ESCRITORIO */
+
+@media /* para escritorio */ only screen and (min-width: 1224px) {
+    .body{
+    background-color: black;
+}
+.btn__bar{
+    width: 0px;
+}
+#check{ display: none;}
+
+.nav{
+    width: 50%;
+}
+
+header{
+    background-color: #030303;
+    height:5rem;  
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
+.nav__menú{
+    font-family: 'Acme', sans-serif;
+    font-weight: 500;
+    list-style-type: none;
+    color: #E25656;
+    display: flex;
+    justify-content: flex-start;
+    }
+.nav__li{
+    font-family: 'Acme', sans-serif;
+    font-weight: 800;
+    color: #E25656;
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: none;
+    list-style-type: none;
+    width: 148px;
+    font-size: 22px;
+}
+.redes__iconos{
+    display: grid;
+    width: 61%;
+    grid-template-columns: 30% 30% 30%;
+}
+.iconos img{
+    width: 2rem;
+    font-weight: bolder;
+    font-family: "acme", sans-serif;
+    color: #E25656;
+    background-color: #81a8e9;
+
+}
+.iconos{
+    font-weight: bolder;
+    font-family: "acme", sans-serif;
+    color: #E25656;
+    background-color: #81a8e9;
+    display: grid;
+    grid-template-columns: 27% 73%;
+    width: 417%;
+    height: 5rem;
+    align-items: center;
+    justify-items: center;
+}
+
+h4.footer__contacto {
+    width: 100%;
+    font-weight: bolder;
+    font-family: "acme", sans-serif;
+    color: #E25656;
+    background-color: #81a8e9;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.footer{
+    font-weight: bolder;
+    font-family: "acme", sans-serif;
+    color: #E25656;
+    background-color: #81a8e9;
+    display: grid;
+    grid-template-columns: 27% 73%;
+    width: 100%;
+    height: 4rem;
+}
+
+.contacto{
+    font-style: italic;
+    text-align: center;
+ 
+}
+.titulos{
+    color: #E25656;
+    padding-top: 4cm;
+    padding-bottom: 1cm;
+    font-family: 'Acme', sans-serif;
+    text-align: center;
+}
+
+.formulario{
+    color: white;
+    text-align: center;
+    font-family: 'Shippori Antique', sans-serif;
+    padding-top: 2cm;
+    padding-bottom: 1cm;
+}
+.dato{
+    color: white;
+}
+.texto{
+    color: white;
+}
+
+.titulo__sub{
+    color: #E25656;
+    padding-top: 1cm;
+    font-family: 'Acme', sans-serif;
+    text-align: center;
+}
+
+.botonContacto{
+    display: inline-block;
+    border: 1cm;
+    font-family: 'Acme', sans-serif;
+    text-align: justify;
+    border-radius: 10%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    bottom: 2cm ; 
+    background-color: #c29f52;
+}
+
+.boton{
+    text-decoration: none;
+    list-style-type: none;
+    color:#E25656;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+p{
+    text-align: center;
+    color: white;
+    font-family: 'Shippori Antique', sans-serif;
+}
+.fondo__opaco{
+    
+    width: 100%;
+    
+}
+.conteiner{
+    position: absolute;
+    width: 100%;
+    opacity: 20%;
+}
+.contenido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 253px;
+    padding-bottom: 95px;
+    background-image: url(../media/foto\ del\ header.jpeg);
+    background-position: top center;
+    background-size: contain;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.actores{
+    padding-bottom: 1cm;
+}
+.logo{
+    width: 320px;
+    padding-bottom: 31px;
+}
+.nav__logo{
+    width: 150px;
+}
+/* animacion al nav */
+a:hover{
+    transform: rotate(-10deg);
+}
+
+
+
+
+/* empezar con grid */
+#quienessomos{
+    display: grid;
+    grid-template-areas: 
+    "titulo titulo" 
+    "texto1 texto1" 
+    "titulo__sub1 titulo__sub1" 
+    "imgseba imgtami" 
+    "titulo__sub2 titulo__sub3" 
+    "texto2 texto3";
+    justify-items: center;
+    }
+#actores{
+    display: grid;
+        grid-template-areas: 
+        "titulo__sub4 titulo__sub4" 
+        "imgloly imgloly" 
+        "titulo__sub5 titulo__sub5"
+        "textololy textololy";
+        justify-items: center;
+    }
+
+#titulo{
+    grid-area: titulo;
+}    
+#texto1{
+    grid-area: texto1;
+    width: 86%;
+}    
+#texto2{
+    grid-area: texto2;
+} 
+#texto3{
+    grid-area: texto3;
+}       
+
+#imgtami{
+    grid-area: imgtami;
+    display: flex;
+    justify-content: center;
+}
+#imgloly{
+    grid-area: imgloly;
+}
+#titulo__sub1{
+    grid-area: titulo__sub1;
+}
+#titulo__sub2{
+    grid-area: titulo__sub2;
+}
+#titulo__sub3{
+    grid-area: titulo__sub3;
+}
+#titulo__sub4{
+    grid-area: titulo__sub4;
+}
+#titulo__sub5{
+    grid-area: titulo__sub5;
+}
+#textololy{
+    grid-area: textololy;
+    padding-bottom: 2cm;
+}
+
+.contenido4{
+    display: grid;
+    grid-template-areas:
+        "titulo4 titulo4 titulo4"
+        "video1 video2 video3"
+        "link link link"
+        "footer4 footer4 footer4";
+        grid-template-rows: 7cm 6cm 3cm 30%;
+        grid-row-gap: 23px;
+        justify-items: center;
+        /* background-color: background: hsla(218, 70%, 71%, 1);
+        background: linear-gradient(90deg, hsla(218, 70%, 71%, 1) 0%, hsla(191, 28%, 23%, 1) 50%, hsla(207, 41%, 27%, 1) 100%);
+        background: -moz-linear-gradient(90deg, hsla(218, 70%, 71%, 1) 0%, hsla(191, 28%, 23%, 1) 50%, hsla(207, 41%, 27%, 1) 100%);
+        background: -webkit-linear-gradient(90deg, hsla(218, 70%, 71%, 1) 0%, hsla(191, 28%, 23%, 1) 50%, hsla(207, 41%, 27%, 1) 100%);
+        filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#81A8E9", endColorstr="#2A454B", GradientType=1 ); */
+}
+#titulo4{
+    grid-area: titulo4;
+}
+#video1{
+    grid-area: video1;
+}
+#video2{
+    grid-area: video2;
+}
+#video3{
+    grid-area: video3;
+}
+#linkyt{
+    grid-area: link;
+}
+#footer4{
+    grid-area: footer4;
+}
+
+.videos{
+    width: 409px;
+    height: 242px;
+}
+.contenido2{
+    display: grid;
+    grid-template-areas: 
+    "contacto formulario";
+    /* background-color: background: hsla(218, 70%, 71%, 1);
+    background: linear-gradient(90deg, hsla(218, 70%, 71%, 1) 0%, hsla(191, 28%, 23%, 1) 50%, hsla(207, 41%, 27%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(218, 70%, 71%, 1) 0%, hsla(191, 28%, 23%, 1) 50%, hsla(207, 41%, 27%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(218, 70%, 71%, 1) 0%, hsla(191, 28%, 23%, 1) 50%, hsla(207, 41%, 27%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#81A8E9", endColorstr="#2A454B", GradientType=1 ); */
+}
+
+#titulo2{
+    font-size: 40px;
+}
+section.contacto{
+ grid-area: contacto;
+ padding-bottom: 4cm;
+} 
+
+section.formulario{
+    grid-area: formulario;
+    padding-top: 5cm;
+    display: grid;
+    justify-items: center;
+}
+label{    
+    color: #E25656;
+    padding-bottom: 1cm;
+    font-family: 'Acme', sans-serif;
+    text-align: center;
+}
+.input{
+    width: 6cm;
+    height: 1cm;
+}
+.enviar{
+    width: 3cm;
+    font-family: 'Acme', sans-serif;
+    background-color: #c29f52;
+    color: #E25656;
+    height: 1cm;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#mensaje{
+    height: 2cm;
+}
+
+#contenido5{
+    background-image: url(../media/foto\ del\ header\ mas\ oscura.jpg);
+    background-position: center;
+} 
