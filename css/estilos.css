@@ -36,7 +36,7 @@
         position: fixed;
         width: 100%;
     }
-    .nav__menú{
+    .nav__menu{
         width: 100%;
         height: 0vh;
         position: fixed;
@@ -63,15 +63,15 @@
         margin-left: 91px;
     }
 #check{ display: none;}
-#check:checked ~ .nav__menú{
+#check:checked ~ .nav__menu{
     height: 100vh;
 }
-#check:checked ~ .nav__menú li{
+#check:checked ~ .nav__menu li{
     display: block;
 }
 
 
-.nav__menú li a.nav__li:hover{
+.nav__menu li a.nav__li:hover{
     color: white;
 
 }
@@ -274,11 +274,7 @@
             grid-template-rows: 7cm 6cm 3cm 30%;
             grid-row-gap: 23px;
             justify-items: center;
-            /* background-color: background: hsla(218, 70%, 71%, 1);
-            background: linear-gradient(90deg, hsla(218, 70%, 71%, 1) 0%, hsla(191, 28%, 23%, 1) 50%, hsla(207, 41%, 27%, 1) 100%);
-            background: -moz-linear-gradient(90deg, hsla(218, 70%, 71%, 1) 0%, hsla(191, 28%, 23%, 1) 50%, hsla(207, 41%, 27%, 1) 100%);
-            background: -webkit-linear-gradient(90deg, hsla(218, 70%, 71%, 1) 0%, hsla(191, 28%, 23%, 1) 50%, hsla(207, 41%, 27%, 1) 100%);
-            filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#81A8E9", endColorstr="#2A454B", GradientType=1 ); */
+           
     }
     #titulo4{
         grid-area: titulo4;
