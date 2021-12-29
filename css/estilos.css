@@ -541,7 +541,7 @@ p{
     width: 150px;
 }
 /* animacion al nav */
-a:hover{
+.nav__menu li a:hover{
     transform: rotate(-10deg);
 }
 
